@@ -1,0 +1,242 @@
+.editor-banner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 59px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    line-height: 59px;
+    z-index: 100;
+
+    font-size: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 11px;
+}
+
+header.editor {
+    margin-top: 97px;
+}
+
+h2.editor {
+    margin-bottom: 92px;
+}
+
+.button-modifier {
+    position: absolute;
+    margin-left: 30px;
+    font-weight: 400;
+    font-family: "Work Sans", sans-serif;
+    font-size: 0.875rem;
+    line-height: 36px;
+    cursor: pointer;
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.button-modifier label {
+    cursor: pointer;
+    margin: 0;
+    color: black;
+    font-weight: 400;
+}
+
+.projects-modal {
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    padding-left: 105px;
+    padding-right: 105px;
+    padding-top: 60px;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    margin: auto;
+}
+
+.projects-modal form {
+    width: 420px;
+    margin-top: 36px;
+    display: flex;
+    flex-direction: column;
+}
+
+.projects-modal form input[type="text"],
+.projects-modal form input[type="select"] {
+    height: 50px;
+    border: none;
+    box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.09);
+
+    font-family: "Work Sans", sans-serif;
+    font-weight: 400;
+    font-size: 0.875rem;
+    color: #444444;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.modal-border {
+    border-bottom: solid 1px #b3b3b3;
+    width: 100%;
+    margin-bottom: 9px;
+}
+
+.modal-button {
+    margin-bottom: 45px;
+    margin-left: auto;
+    padding: 10px 49px;
+    width: auto;
+}
+
+h3 {
+    color: black;
+    text-align: center;
+    font-family: "Work Sans", sans-serif;
+    font-weight: 400;
+    font-size: 1.625rem;
+}
+
+.projects-modal::backdrop {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.close-button {
+    position: absolute;
+    right: 30px;
+    top: 26px;
+    cursor: pointer;
+}
+
+.back-button {
+    position: absolute;
+    left: 30px;
+    top: 26px;
+    cursor: pointer;
+}
+
+.works-container {
+    width: 420px;
+    margin-top: 46px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 29px;
+    column-gap: 10px;
+    padding-bottom: 67px;
+}
+
+.work-container {
+    height: 100px;
+    width: calc(20% - 8px);
+    position: relative;
+}
+
+.work-container img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.work-container button {
+    height: 17px;
+    width: 17px;
+    position: absolute;
+    background-color: black;
+    border-radius: 2px;
+    top: 6px;
+    right: 6px;
+    margin: 0;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.work-container button img {
+    height: auto;
+    width: auto;
+}
+
+.projects-modal form label {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.projects-modal form input[type="file"] {
+    box-shadow: none;
+    margin-bottom: 10px;
+}
+
+.projects-modal form input[type="submit"] {
+    height: 36px;
+    padding-left: 100px;
+    padding-right: 100px;
+    width: fit-content;
+
+    margin-top: 32px;
+    margin-bottom: 55px;
+}
+
+.projects-modal form .modal-border {
+    margin-top: 47px;
+}
+
+.projects-modal .file-input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 3px;
+    height: 170px;
+    background-color: #e8f1f6;
+    margin-bottom: 10px;
+}
+
+.projects-modal .file-input-container label.file-preview {
+    height: 100%;
+    background: none;
+    padding: 0;
+}
+
+.projects-modal .file-input-container label.file-preview img {
+    height: 100%;
+    margin: 0;
+}
+
+.projects-modal .file-input-container img {
+    margin-top: 13px;
+    height: 76px;
+    margin-bottom: 6px;
+}
+
+.projects-modal .file-input-container label {
+    cursor: pointer;
+    display: block;
+    height: 36px;
+    background-color: #cbd6dc;
+    color: #306685;
+    padding: 10px 33px;
+    border-radius: 50px;
+    margin: 0 auto;
+    box-sizing: border-box;
+
+    font-weight: 500;
+}
+
+.projects-modal .file-input-container input {
+    display: none;
+}
+
+.projects-modal .file-input-container p {
+    margin-top: 7px;
+    color: #444444;
+    font-size: 0.625rem;
+}
