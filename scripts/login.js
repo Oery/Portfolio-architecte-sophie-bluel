@@ -18,10 +18,18 @@ async function login(creds) {
     });
 
     if (!res.ok) {
+        const errorSpan = document.getElementById("login-error");
+        const errorMsg = "Mot de passe / identifiant invalide";
+
+        if (errorSpan) {
+            errorSpan.innerText = errorMsg;
+            return;
+        }
+
         const form = document.getElementById("login-form");
         const span = document.createElement("span");
         span.id = "login-error";
-        span.innerText = "Mot de passe / identifiant invalide";
+        span.innerText = errorMsg;
         form.insertBefore(span, form.childNodes[8]);
         return;
     }
