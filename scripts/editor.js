@@ -4,7 +4,7 @@ const Auth = {
     },
 
     logOut() {
-        sessionStorage.clear();
+        sessionStorage.removeItem("token");
         window.location.reload();
     },
 };
